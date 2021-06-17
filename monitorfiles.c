@@ -59,7 +59,7 @@ int main( )
     }
 
     /*adding the “/tmp” directory into watch list. Here, the suggestion is to validate the existence of the directory before adding into monitoring list.*/
-    wd = inotify_add_watch( fd, "/home/leo/Programs/wall-testing/~npa/wall/files/", IN_ACCESS);
+    wd = inotify_add_watch( fd, "./files/", IN_ACCESS);
 
     /*read to determine the event change happens on “/tmp” directory. Actually this read blocks until the change event occurs*/
 

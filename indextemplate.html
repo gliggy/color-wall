@@ -11,7 +11,7 @@
             }
 
             function setcolour(col) {
-                xhttp.open("GET", "/~npa/wall/files/" + col + "?q="+getRandomStr(), true);
+                xhttp.open("GET", "wall/files/" + col + "?q="+getRandomStr(), true);
                 xhttp.onreadystatechange = function() {
                     window.location.reload();
                 };
